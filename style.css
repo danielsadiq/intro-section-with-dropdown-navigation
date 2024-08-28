@@ -1,5 +1,6 @@
 body{
     font-family: 'Epilogue', sans-serif;
+    max-width: 96%;
 }
 .lazy-me{
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
