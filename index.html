@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <div class="navbar-main">
+    <nav class='navbar navbar-expand-md'>
+        <a href='#' class='navbar-brand pex'><h2>snap</h2></a>
+        <!-- data-bs-toggle="collapse" -->
+        <button class="navbar-toggler p-0 b-0" type="button" id="nav-btn" aria-expanded="false" >
+            <span class="navbar-toggler-icon"></span>
+            <span class="nav-close" style="display: none;"><img src="images/icon-close-menu.svg"></span>
+        </button>
+        <div class='navbar-collapse' id='navbarScroll'>
+            <ul class='navbar-nav me-auto'>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link drops" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features 
+                        <span class="arrows">
+                            <img src="images/icon-arrow-down.svg">
+                            <img src="images/icon-arrow-up.svg" style="display: none;">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><img class="pe-3" src="images/icon-todo.svg">Todo List</a></li>
+                        <li><a class="dropdown-item" href="#"><img class="pe-3" src="images/icon-calendar.svg">Calendar</a></li>
+                        <li><a class="dropdown-item" href="#"><img class="pe-3" src="images/icon-reminders.svg">Remiders</a></li>
+                        <li><a class="dropdown-item" href="#"><img class="pe-3" src="images/icon-planning.svg">Planning</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown pe-3">
+                    <a class="nav-link drops" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Company 
+                        <span class="arrows">
+                            <img src="images/icon-arrow-down.svg">
+                            <img src="images/icon-arrow-up.svg" style="display: none;">
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">History</a></li>
+                        <li><a class="dropdown-item" href="#">Our Tem</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li class='nav-item pe-4'>
+                    <a href='' class='nav-link'>Careers</a>
+                </li>
+                <li class='nav-item pe-3'>
+                    <a href='' class='nav-link'>About</a>
+                </li>
+            </ul>
+            <div class="dd-flex">
+                <a href="#" class="login nav-link ps-4 pt-1 pe-4">Login</a>
+                <button class="btn btn-outline-dark top-btn">Register</button>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <div class="container-xl body">
+        <div class="row">
+            <div class="col-lg-6" id="hero-div">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="images/image-hero-desktop.png">
+                    <source media="(min-width: 480px)" srcset="images/image-hero-mobile.png">
+                    <img src="images/image-hero-mobile.png" id="hero">
+                </picture>
+            </div>
+            <div class="col-lg-6 body-col">
+                <h1><span id="make">Make</span> remote work</h1>
+                <div class="text">
+                    <p>
+                        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+                    </p>
+                    <button class="btn btn-custom btn-lg" style="border: 1px solid hsl(0, 0%, 8%);">Learn more</button>
+                </div>
+                <div class="images">
+                    <img class="logos" src="./images/client-databiz.svg">
+                    <img class="logos" src="./images/client-audiophile.svg">
+                    <img class="logos" src="./images/client-meet.svg">
+                    <img class="logos" src="./images/client-maker.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/48eccf0da5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
